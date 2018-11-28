@@ -295,6 +295,7 @@
 				otrUserCard.style.marginLeft = "auto";
 				otrUserCard.style.marginRight = "auto";
 			}
+			showNotification(msgTxt);
 		}
 		serverSocket.onerror = function(et)
 		{
@@ -379,7 +380,6 @@
 		if(!document.hasFocus()){
 			document.title ="* "+ (++inBlurMessageCount)+" New!";
 			document.getElementById("myAudio").play();
-			showNotification(msgTxt);
 		}
 	}
 	
